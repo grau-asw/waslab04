@@ -51,4 +51,8 @@ Rails.application.configure do
 
   # Allow connections to local server on cloud IDE.
   config.hosts.clear
+
+  # Allow requests from any origin for development purposes.
+  config.action_controller.forgery_protection_origin_check = false
+
 end
